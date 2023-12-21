@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #9441FE;
+  --secondary-color: #fff;
+}
+
+body {
+  background-color: #000000;
+}
+
+.bg-image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  float: right;
+  width: 67vw;
+  height: 100vh;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.navbar {
+  position: relative;
+  width: 100%;
+  margin-top: 1px;
+}
+
+.center-image-container img {
+  position: absolute;
+  width: 15em;
+  height: 10em;
+  left: 35%;
+  top: -35px;
+  margin-left: 5em;
+  text-align: center;
+}
+
+.navbar-left ul {
+  position: absolute;
+  display: flex;
+  margin-top: 1.5%;
+}
+
+.navbar-left ul li {
+  padding-left: 5em;
+}
+
+.navbar-left ul li a {
+  text-decoration: none;
+  color: var(--secondary-color);
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  position: relative;
+  padding-right: 30px;
+  text-decoration: none;
+  color: var(--secondary-color);
+  display: inline-block;
+  font-family: cursive;
+}
+
+li a::before {
+  content: '';
+  position: absolute;
+  width: calc(10% + 30px);
+  height: 2px;
+  background-color: var(--primary-color);
+  bottom: 0;
+  left: 0;
+  transform-origin: center;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+li a:hover::before {
+  transform: scaleX(1);
+}
+
+.navbar-left ul li a:hover {
+  color: var(--primary-color);
+}
+
+.navbar-right {
+  position: absolute;
+  margin-top: 1em;
+  margin-left: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.srch-bar {
+  width: 20em;
+  background: transparent;
+  padding: 0.8em;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+.navbar-right svg {
+  position: absolute;
+  margin-left: -35px;
+  margin-top: 10px;
+}
+
+.navbar-right svg:hover {
+  cursor: pointer;
+}
+
+.srch-bar::placeholder {
+  color: white;
+  font-family: fantasy;
+}
+
+.login {
+  position: relative;
+  left: 15%;
+  margin-top: 5px;
+}
+
+.btn1 {
+  padding: 0.5em 1.5em;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.signup {
+  position: relative;
+  left: 17%;
+  margin-top: 5px;
+}
+
+.btn2 {
+  padding: 0.5em 1em;
+  color: var(--secondary-color);
+  background: transparent;
+  border: 1px solid var(--primary-color);
+  outline: none;
+  border-radius: 7px;
+  font-weight: 800;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn1:hover {
+  box-shadow: 1px 1px 8px 1px var(--secondary-color);
+  transition: 0.6s ease;
+}
+.btn2:hover {
+  box-shadow: 1px 1px 8px 1px var(--primary-color);
+  transition: 0.6s ease;
+}
+.btn1,.btn2:hover {
+  cursor: pointer;
+}
+
+.intro {
+  position: absolute;
+  color: var(--primary-color);
+  font-size: 5em;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  top: 20%;
+  letter-spacing: 1px;
+  left: 5%;
+}
+
+.subintro {
+  position: absolute;
+  color: var(--secondary-color);
+  top: 60%;
+  letter-spacing: 1px;
+  left: 5%;
+  font-family: cursive;
+}
+
+.episode1 {
+  position: relative;
+  top: 37pc;
+  left: 5%;
+}
+.ep1 {
+  position: absolute;
+  width: 20em;
+  border-radius: 30px;
+  padding: 1pc;
+  padding-right: 5pc;
+  color: var(--secondary-color);
+  background: transparent;
+  letter-spacing: 0.7px;
+}
+
+.icon-arrow {
+  position: absolute;
+  color: green;
+  font-size: 45px;
+  top: -0.2pc;
+  left: 11pc;
+  color: var(--secondary-color);
+  outline: none;
+}
+
+.episode1,.ep1:hover {
+  position: absolute;
+  cursor: pointer;
+  transition: 0.5s ease;
+  box-shadow: 1px 1px 8px 1px var(--secondary-color); 
+}
